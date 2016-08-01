@@ -1,0 +1,6 @@
+cluster:
+  image: ceph/demo
+  net: host
+  environment:
+    MON_IP: 'your-IP'
+    CEPH_PUBLIC_NETWORK: 'your-IP-with-zero-in-the-end/24'
