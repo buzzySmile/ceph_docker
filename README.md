@@ -23,7 +23,7 @@ $ docker-compose up
 ### Creating admin user:
 - Open the bash inside docker container
 ```
-$ docker exec -it ceph_cluster_1 bash
+$ docker exec -it cephdocker_cluster_1 bash
 ```
 - Setup the admin user inside the container. Ex: If you choose a user ID called `guilherme`
 ```
