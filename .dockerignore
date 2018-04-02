@@ -1,0 +1,8 @@
+.git
+.idea
+dev
+pgdata
+.bash_history
+Makefile
+docker-compose.yml
+README.md

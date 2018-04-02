@@ -1,6 +1,8 @@
-cluster:
+ceph_docker:
   image: ceph/demo
   net: host
+  volumes:
+    - .:/root/
   environment:
-    MON_IP: 'your-IP'
-    CEPH_PUBLIC_NETWORK: 'your-IP-with-zero-in-the-end/24'
+    MON_IP: '192.168.77.14'
+    CEPH_PUBLIC_NETWORK: '192.168.77.0/24'
