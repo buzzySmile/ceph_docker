@@ -32,7 +32,7 @@ build:
 	@docker-compose build --force-rm
 
 cli:
-	@docker-compose run --rm ceph_docker bash
+	@docker-compose exec ceph_docker bash
 
 clean: stop
 	@docker-compose rm --force
