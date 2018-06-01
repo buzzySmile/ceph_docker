@@ -4,8 +4,8 @@ ceph_docker:
   volumes:
     - .:/root/
   environment:
-    MON_IP: '[YOUR_LOCAL_IP]]'
-    CEPH_PUBLIC_NETWORK: '[YOUR_LOCAL_NETWORK_IP]/24'
+    MON_IP: ${HOST_IP_ADDR}
+    CEPH_PUBLIC_NETWORK: ${NETWORK_CIDR}
     CEPH_DEMO_UID: 'default'
     CEPH_DEMO_ACCESS_KEY: 'accessKey1'
     CEPH_DEMO_SECRET_KEY: 'verySecretKey1'
